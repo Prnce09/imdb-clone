@@ -1,11 +1,49 @@
-.app {
-  text-align: center;
-  padding: 20px;
+.search-container {
+  width: 350px;
+  margin: auto;
 }
 
-.movie-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.input-wrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.suggestion-list {
+  list-style: none;
+  margin-top: 5px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-list li:hover {
+  background: #f0f0f0;
 }
